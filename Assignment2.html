@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleAssignment2.css">
+
+    <title>Portofolio</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <ul>
+          <li><a  href="/MateriSesi3/Assignment1.html">Home</a></li>
+          <li><a  href="Latihan1.html">Product</a></li>
+          <li><a  href="Latihan1.html">Gallery</a></li>
+          <li><a  href="Latihan1.html">Blog</a></li>
+          <li><a  href="Latihan1.html">Inventory</a></li>
+        </ul>
+    </nav>
+    
+    <!-- box container Portofolio -->
+    <div class="container">
+      <div class="box1">
+        <img src="/asset/Logo.png" alt="foto profil" width="150" height="150" class="foto">
+        <ul>
+          <li><h1>Nama Anda</h1></li>
+          <li><p class="job">Front End Designer</p></li>
+          <button class="btn1" id="editButton" type="button">Edit</button>
+          <button class="btn2" type="button">Resume</button>
+        </ul>
+        <ul class="box1_1">
+          <li><p>Availability</p></li>
+          <li><p>Usia</p></li>
+          <li><p>Lokasi</p></li>
+          <li><p>Pengalaman</p></li>
+          <li><p>Email</p></li>
+        </ul>
+        <ul class="box1_2">
+          <li><p>Fulltime</p></li>
+          <li><p>19</p></li>
+          <li><p>Jakarta, Indonesia</p></li>
+          <li><p>2</p></li>
+          <li><p>Fahrul@gmail.com</p></li>
+        </ul>
+      </div>
+    </div>
+      
+
+      <!-- form isi Portofolio -->
+    <div class="container boxForm">
+        <form id="myForm" class="hide-content">
+            <label for="nama">Nama</label></br>
+            <input type="text" name="nama" placeholder="Masukkan Nama Anda" autofocus>
+            <br>
+            <label for="role">Role</label></br>
+            <input type="text" name="role" value="">
+            <br>
+            <label for="avail">Availability</label></br>
+            <input type="text" name="avail" value="">
+            <br>
+            <label for="age">Usia</label></br>
+            <input type="text" name="age" value="">
+            <br>
+            <label for="loc">Lokasi</label></br>
+            <input type="text" name="loc" value="">
+            <br>
+            <label for="year">Year Experience</label></br>
+            <input type="text" name="year" value="">
+            <br>
+            <label for="mail">Email</label></br>
+            <input type="text" name="mail" value=""><br>
+            <label for="formImage">Foto</label>
+            <input type="file" id="formImage" name="userpicture" accept="image/png, image/jpeg" >
+            <button class="btn-3" widt>Submit</button>
+        </form>
+    </div>
+
+
+
+
+
+    <!-- panggil javascript file external -->
+    <script src="index.js"></script>
+</body>
+</html>

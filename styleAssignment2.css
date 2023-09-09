@@ -1,0 +1,208 @@
+/* reset behavior css */
+*{
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+body{
+  font-family: sans-serif;
+  background-color: rgb(211, 214, 222);
+}
+
+/* navbar */
+nav{
+  display: flex;
+  background-color: white;
+  justify-content: right;
+  /* padding: 20px 0; */
+  color: black;
+  height: 50px;
+  align-items: center;
+  font-size: 1.2em;
+  box-shadow: 0px -2px 0.4em black;
+}
+
+nav .logo{
+  font-size: 2rem;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  width: 30%;
+  margin-right: 3.5em;
+  justify-content: space-between;
+}
+
+nav ul li a{
+  color: black;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+/* box container  */
+.container{
+  margin: 2em 3em;
+  border: 1px solid grey;
+  background-color: white;
+  border: none;
+  box-shadow: rgba(120, 120, 120, 0.6) 0px 4px 12px;
+  
+}
+
+.box1{
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  height: 12rem;
+}
+
+.foto{
+  border-radius: 50%;
+}
+
+.box1 ul li{
+  text-decoration: none;
+  list-style: none;
+  margin: 0.3rem 2rem;
+}
+.box1 .job{
+  color: #888888;
+  font-size: 0.8rem;
+  margin-top: -6px;
+}
+.box1 button{
+  margin: 1rem 2rem;
+  padding: 7px 20px;
+  font-size: 1.2rem;
+  border-radius: 3px;
+}
+.box1 .btn1{  
+  color: white;
+  background-color: blue;
+  border: 1px solid blue;
+  box-shadow: rgba(45, 16, 149, 0.858) 0px 4px 12px;
+}
+.box1 .btn2{
+  color: green;
+  background-color: white;
+  border: #119415 solid 1px;
+  margin-left: -1rem;
+}
+
+.box1_1 {
+  margin-left: 10rem;
+  border-left: 1px solid rgba(141, 136, 136, 0.353);
+}
+.box1_1 li {
+  padding: 5px 1rem;
+  font-weight: bold;
+}
+
+.box1_2 li{
+  padding: 5px 0;
+  color: #888888;
+}
+
+
+
+
+/* =========form======== */
+.boxForm{
+  background-color: white;
+  padding: 2rem 1.5rem;
+}
+
+form label{
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+form input{
+  width: 100%;
+  margin-bottom: 15px;
+  box-shadow: 1px 0px 2px #888888;
+  border: 2px solid lightgrey;
+  height: 2em;
+  font-size: 1rem;
+}
+
+.btn-3{
+  margin-top: 8px;
+  box-shadow: 1px 0px 2px #888888;
+  height: 30px;
+  width: 100%;
+  background-color: #119415;
+  border: none;
+  text-transform: uppercase;
+  color: white;  
+}
+
+
+
+
+
+/* media query */
+
+/* laptop */
+@media (max-width: 1150px) {
+  html{
+      font-size: 75%;
+  }
+
+}
+
+@media (max-width: 992px) {
+  html{
+      font-size: 70%;
+  }
+  .foto{
+    height: 120px;
+    width: 120px;
+  }
+
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html{  
+      font-size: 65%;
+  }
+
+  .box1_1{
+    margin-left: 5rem;
+  }
+  .foto{
+    height: 100px;
+    width: 100px;
+  }
+
+  .boxForm input{
+    font-size: 0.9rem;
+  }
+}
+
+
+/* mobile */
+@media (max-width: 576px) {
+  html{
+      font-size: 50%;
+  }
+
+  .foto{
+    height: 80px;
+    width: 80px;
+  }
+ 
+  .box1_1{
+    margin-left: 0.5rem;
+  }
+
+  .boxForm input{
+    font-size: 0.8rem;
+  }
+
+}
